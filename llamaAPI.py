@@ -16,8 +16,8 @@ load_dotenv()
 urlQdrant = os.getenv('DATABASE_URL')
 apiQdrant = os.getenv('CHAVE_QDRANT')
 apillama = os.getenv('CHAVE_LLAMA')
-portRender = os.getenv('PORT')
-hostRender = os.getenv('HOST')
+# portRender = os.getenv('PORT')
+# hostRender = os.getenv('HOST')
 
 # Inicializando o cliente do Qdrant
 qdrant_client = QdrantClient(
@@ -118,5 +118,5 @@ def chat():
 
 # Executa a aplicação Flask
 if __name__ == '__main__':
-    # app.run(host='0.0.0.0', port=5000, debug=True)
-    app.run(host=hostRender, port=portRender)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+    # app.run(host=hostRender, port=portRender)
