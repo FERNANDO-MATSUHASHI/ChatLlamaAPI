@@ -7,7 +7,6 @@ import os
 import uuid
 from flask_cors import CORS
 from langchain.memory import ConversationBufferMemory
-from sentence_transformers import SentenceTransformer
 
 app = Flask(__name__)
 CORS(app)
